@@ -1,0 +1,199 @@
+/* ==========================================================================
+   Global Typography & Standardized Reusable Component Rules
+   ========================================================================== */
+
+html {
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+
+/* Semantic Headings */
+h1,
+.typo-h1 {
+  font-family: var(--font-primary);
+  font-size: var(--heading-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.02em;
+  overflow-wrap: break-word;
+}
+
+h2,
+.typo-h2 {
+  font-family: var(--font-primary);
+  font-size: var(--heading-h2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h2);
+  letter-spacing: -0.015em;
+  overflow-wrap: break-word;
+}
+
+h3,
+.typo-h3 {
+  font-family: var(--font-primary);
+  font-size: var(--heading-h3);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-h3);
+  letter-spacing: -0.01em;
+  overflow-wrap: break-word;
+}
+
+h4,
+.typo-h4 {
+  font-family: var(--font-primary);
+  font-size: var(--heading-h4);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-h4);
+  overflow-wrap: break-word;
+}
+
+h5,
+.typo-h5 {
+  font-family: var(--font-primary);
+  font-size: var(--heading-h5);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-compact);
+  overflow-wrap: break-word;
+}
+
+/* Interactive & Form Elements */
+button,
+.typo-btn {
+  font-family: var(--font-primary);
+  font-size: var(--text-button);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-compact);
+}
+
+input,
+select,
+textarea {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-compact);
+  max-width: 100%;
+}
+
+label,
+.typo-label {
+  font-family: var(--font-primary);
+  font-size: var(--text-label);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-compact);
+}
+
+/* Standardized Reusable Component Typography Classes */
+.typo-body {
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+}
+
+.typo-body-secondary {
+  font-family: var(--font-primary);
+  font-size: var(--text-body-secondary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-secondary);
+}
+
+.typo-nav {
+  font-family: var(--font-primary);
+  font-size: var(--text-nav);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-compact);
+}
+
+.typo-card-title {
+  font-family: var(--font-primary);
+  font-size: var(--heading-h4);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-h4);
+  overflow-wrap: break-word;
+}
+
+.typo-card-desc {
+  font-family: var(--font-primary);
+  font-size: var(--text-body-secondary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-secondary);
+}
+
+.typo-badge {
+  font-family: var(--font-primary);
+  font-size: var(--text-badge);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-compact);
+}
+
+.typo-caption {
+  font-family: var(--font-primary);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-caption);
+}
+
+.typo-caption-medium {
+  font-family: var(--font-primary);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-caption);
+}
+
+.typo-footer {
+  font-family: var(--font-primary);
+  font-size: var(--text-footer);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-secondary);
+}
+
+/* Unify legacy font utility classes to Inter with tabular numerals where appropriate */
+.font-display,
+.font-serif,
+.font-sans {
+  font-family: var(--font-primary);
+}
+
+.font-mono-num,
+.font-mono {
+  font-family: var(--font-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Responsive Tablet & Mobile Typography Adjustments */
+@media (max-width: 1024px) {
+  :root {
+    --heading-h1: clamp(1.875rem, 3.2vw, 2.25rem);
+    --heading-h2: clamp(1.5rem, 2.5vw, 1.875rem);
+    --heading-h3: clamp(1.2rem, 1.8vw, 1.375rem);
+    --heading-h4: clamp(1rem, 1.4vw, 1.125rem);
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --heading-h1: clamp(1.625rem, 6vw, 2rem);
+    --heading-h2: clamp(1.375rem, 5vw, 1.625rem);
+    --heading-h3: clamp(1.125rem, 4vw, 1.25rem);
+    --heading-h4: clamp(1rem, 3.5vw, 1.125rem);
+    --text-body: 0.9375rem;
+  }
+
+  /* Prevent iOS/mobile zoom and clipping while keeping controls legible */
+  input,
+  select,
+  textarea {
+    font-size: var(--font-size-base);
+  }
+}

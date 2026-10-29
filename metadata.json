@@ -1,0 +1,6 @@
+{
+  "name": "The Creative Castles & Choco Delights",
+  "description": "Official online storefront for The Creative Castles & Choco Delights, Kovvur — customized chocolate bars, Kunafa chocolates, personalized wrappings, resin rakhis, fridge magnets, and celebration hampers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
